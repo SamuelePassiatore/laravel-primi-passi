@@ -17,7 +17,8 @@
     </div>
     <header class="bg-warning d-flex justify-content-center align-items-center" style="height: 100px">
         @foreach ($pages as $page)
-            <div class="px-5 fw-bold"><a href="{{ route('page', ['index' => $loop->index]) }}">{{ $page }}</a>
+            <div class="px-5 fw-bold">
+                <a href="{{ route('page', ['index' => $loop->index]) }}">{{ $page }} </a>
             </div>
         @endforeach
     </header>
