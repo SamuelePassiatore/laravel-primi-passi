@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home', ['phrase' => 'Hello World! I am a new laravel user']);
+    $phrase = 'Hello World! I am a new laravel user';
+    //return view('home', ['phrase' => $phrase]);
+    return view('home', compact('phrase'));
 });
