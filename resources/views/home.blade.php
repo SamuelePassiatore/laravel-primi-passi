@@ -15,12 +15,10 @@
     <div class="text-center h-25 bg-danger py-3">
         <h1>{{ $phrase }}</h1>
     </div>
-    <header>
-        <ul>
-            @foreach ($pages as $page)
-                <li>{{ $page }}</li>
-            @endforeach
-        </ul>
+    <header class="bg-warning d-flex justify-content-center align-items-center" style="height: 100px">
+        @foreach ($pages as $page)
+            <div class="px-5 fw-bold">{{ $page }}</div>
+        @endforeach
     </header>
 </body>
 
