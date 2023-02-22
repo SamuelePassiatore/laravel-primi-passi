@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Hello World! I am a new laravel user</h1>
+    <h1>{{$phrase}}</h1>
 </body>
 
 </html>
