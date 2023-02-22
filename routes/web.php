@@ -20,8 +20,8 @@ Route::get('/', function () {
     return view('home', compact('phrase', 'pages'));
 })->name('home');
 
-Route::get('/page', function () {
+Route::get('/page{index}', function ($index) {
     $pages = ['Homepage', 'Products', 'Blog', 'Pricing', 'About Us', 'Contacts', 'FAQ'];
-    $page = $pages[0];
+    $page = $pages[$index];
     return view('page', compact('page'));
 })->name('page');
