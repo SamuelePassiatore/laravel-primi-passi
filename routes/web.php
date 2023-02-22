@@ -18,4 +18,10 @@ Route::get('/', function () {
     $pages = ['Homepage', 'Products', 'Blog', 'Pricing', 'About Us', 'Contacts', 'FAQ'];
     //return view('home', ['phrase' => $phrase]);
     return view('home', compact('phrase', 'pages'));
-});
+})->name('home');
+
+Route::get('/page', function () {
+    $pages = ['Homepage', 'Products', 'Blog', 'Pricing', 'About Us', 'Contacts', 'FAQ'];
+    $page = $pages[0];
+    return view('page', compact('page'));
+})->name('page');
